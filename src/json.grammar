@@ -1,0 +1,16 @@
+@top JsonText { value }
+
+value {
+  True |
+  False |
+  Null
+}
+
+@tokens {
+  whitespace { $[ \n\r\t] }
+  True { "true" }
+  False { "false" }
+  Null { "null" }
+}
+
+@skip { whitespace }
