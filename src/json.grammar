@@ -3,7 +3,8 @@
 value {
   True |
   False |
-  Null
+  Null |
+  Number
 }
 
 @tokens {
@@ -11,6 +12,10 @@ value {
   True { "true" }
   False { "false" }
   Null { "null" }
+  Number { '-'? int frac? exp?  }
+  int { '0' | ($[1-9] std.digit*) }
+  frac { '.' std.digit+ }
+  exp { $[eE] $[+\-]? std.digit+ }
 }
 
 @skip { whitespace }
