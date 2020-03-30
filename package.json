@@ -28,6 +28,6 @@
     "prepare": "npm run build",
     "test": "npm run build && mocha test/test-json.js",
     "demo:dev": "parcel index.html --out-dir docs",
-    "demo:build": "rm -rf docs && parcel build index.html --out-dir docs"
+    "demo:build": "rm -rf docs && parcel build index.html --out-dir docs --public-url '.'"
   }
 }
