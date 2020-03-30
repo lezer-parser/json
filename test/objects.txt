@@ -1,0 +1,32 @@
+# Empty Object
+
+{ }
+
+==>
+
+JsonText(Object)
+
+# One Property
+
+{
+  "foo": 123
+}
+
+==>
+
+JsonText(Object(Property(String,Number)))
+
+# Multiple Properties
+
+{
+  "foo": 123,
+  "bar": "I'm a bar!",
+  "obj": {}
+}
+
+==>
+
+JsonText(Object(
+  Property(String,Number),
+  Property(String,String),
+  Property(String, Object())))

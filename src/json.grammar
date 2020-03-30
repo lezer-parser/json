@@ -5,8 +5,12 @@ value {
   False |
   Null |
   Number |
-  String
+  String |
+  Object
 }
+
+Object { "{" (Property ("," Property)*)? "}" }
+Property { String ":" value }
 
 @tokens {
   whitespace { $[ \n\r\t] }
