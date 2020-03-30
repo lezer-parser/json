@@ -2,31 +2,28 @@
 
 value { True | False | Null | Number | String | Object | Array }
 
-Array { "[" list<value>? "]" }
+Array  { "[" list<value>? "]" }
 Object { "{" list<Property>? "}" }
 
 Property { String ":" value }
 
 @tokens {
-  whitespace { $[ \n\r\t] }
-
-  True { "true" }
+  True  { "true" }
   False { "false" }
-  Null { "null" }
+  Null  { "null" }
 
   Number { '-'? int frac? exp?  }
-  int { '0' | ($[1-9] std.digit*) }
+  int  { '0' | $[1-9] std.digit* }
   frac { '.' std.digit+ }
-  exp { $[eE] $[+\-]? std.digit+ }
+  exp  { $[eE] $[+\-]? std.digit+ }
 
   String { '"' char* '"' }
-  char {
-    $[\u{20}\u{21}\u{23}-\u{5b}\u{5d}-\u{10ffff}] |
-    "\\" ($["\\\/bfnrt] | "u" hex hex hex hex )
-  }
-  hex { $[0-9a-fA-F] }
+  char { $[\u{20}\u{21}\u{23}-\u{5b}\u{5d}-\u{10ffff}] | "\\" esc }
+  esc  { $["\\\/bfnrt] | "u" hex hex hex hex }
+  hex  { $[0-9a-fA-F] }
+
+  whitespace { $[ \n\r\t] }
 }
 
 @skip { whitespace }
-
 list<item> { item ("," item)* }
