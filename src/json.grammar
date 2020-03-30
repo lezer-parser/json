@@ -5,7 +5,10 @@ value { True | False | Null | Number | String | Object | Array }
 Array  { "[" list<value>? "]" }
 Object { "{" list<Property>? "}" }
 
-Property { String ":" value }
+Property { PropertyName ":" value }
+PropertyName { string }
+
+String { string }
 
 @tokens {
   True  { "true" }
@@ -17,7 +20,7 @@ Property { String ":" value }
   frac { '.' std.digit+ }
   exp  { $[eE] $[+\-]? std.digit+ }
 
-  String { '"' char* '"' }
+  string { '"' char* '"' }
   char { $[\u{20}\u{21}\u{23}-\u{5b}\u{5d}-\u{10ffff}] | "\\" esc }
   esc  { $["\\\/bfnrt] | "u" hex hex hex hex }
   hex  { $[0-9a-fA-F] }

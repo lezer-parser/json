@@ -14,7 +14,7 @@ JsonText(Object)
 
 ==>
 
-JsonText(Object(Property(String,Number)))
+JsonText(Object(Property(PropertyName,Number)))
 
 # Multiple Properties
 
@@ -28,7 +28,7 @@ JsonText(Object(Property(String,Number)))
 ==>
 
 JsonText(Object(
-  Property(String,Number),
-  Property(String,String),
-  Property(String,Object),
-  Property(String,Array(Number,Number,Number))))
+  Property(PropertyName,Number),
+  Property(PropertyName,String),
+  Property(PropertyName,Object),
+  Property(PropertyName,Array(Number,Number,Number))))
