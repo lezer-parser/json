@@ -27,3 +27,5 @@ Property { String ":" value }
 
 @skip { whitespace }
 list<item> { item ("," item)* }
+
+@detectDelim
