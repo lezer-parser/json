@@ -21,7 +21,8 @@ JsonText(Object(Property(String,Number)))
 {
   "foo": 123,
   "bar": "I'm a bar!",
-  "obj": {}
+  "obj": {},
+  "arr": [1, 2, 3]
 }
 
 ==>
@@ -29,4 +30,5 @@ JsonText(Object(Property(String,Number)))
 JsonText(Object(
   Property(String,Number),
   Property(String,String),
-  Property(String, Object())))
+  Property(String,Object),
+  Property(String,Array(Number,Number,Number))))

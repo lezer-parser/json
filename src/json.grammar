@@ -1,15 +1,10 @@
 @top JsonText { value }
 
-value {
-  True |
-  False |
-  Null |
-  Number |
-  String |
-  Object
-}
+value { True | False | Null | Number | String | Object | Array }
 
-Object { "{" (Property ("," Property)*)? "}" }
+Array { "[" list<value>? "]" }
+Object { "{" list<Property>? "}" }
+
 Property { String ":" value }
 
 @tokens {
@@ -33,3 +28,5 @@ Property { String ":" value }
 }
 
 @skip { whitespace }
+
+list<item> { item ("," item)* }
