@@ -2,13 +2,13 @@
 
 value { True | False | Null | Number | String | Object | Array }
 
-Array  { "[" list<value>? "]" }
+String { string }
 Object { "{" list<Property>? "}" }
+Array  { "[" list<value>? "]" }
 
 Property { PropertyName ":" value }
 PropertyName { string }
 
-String { string }
 
 @tokens {
   True  { "true" }
