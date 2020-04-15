@@ -14,7 +14,7 @@
   "devDependencies": {
     "@codemirror/next": "^0.4.0",
     "lezer-generator": "^0.8.4",
-    "lezer-tree": "^0.8.3",
+    "lezer-tree": "^0.8.4",
     "mocha": "^7.1.1",
     "parcel-bundler": "^1.12.4",
     "rollup": "^1.10.0",
