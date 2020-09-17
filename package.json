@@ -9,6 +9,7 @@
     "require": "./dist/index.cjs"
   },
   "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
   "author": "Arun Srinivasan <rulfzid@gmail.com>",
   "license": "MIT",
   "devDependencies": {
