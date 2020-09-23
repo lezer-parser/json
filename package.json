@@ -1,6 +1,6 @@
 {
   "name": "lezer-json",
-  "version": "0.8.5",
+  "version": "0.10.0",
   "description": "lezer-based JSON grammar",
   "main": "dist/index.cjs",
   "type": "module",
