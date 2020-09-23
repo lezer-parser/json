@@ -16,11 +16,11 @@ JsonText(Number)
 
 # Leading Zeros Aren't Ok
 
-0123
+[0123]
 
 ==>
 
-JsonText(Number, ⚠(Number))
+JsonText(Array(Number, ⚠, Number))
 
 # Optional Minus Sign
 
