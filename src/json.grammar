@@ -26,6 +26,8 @@ PropertyName { string }
   hex  { $[0-9a-fA-F] }
 
   whitespace { $[ \n\r\t] }
+
+  "{" "}" "[" "]"
 }
 
 @skip { whitespace }
