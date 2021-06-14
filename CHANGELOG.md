@@ -1,3 +1,9 @@
+## 0.13.2 (2021-06-14)
+
+### Bug fixes
+
+Include nodes for brackets and braces in the tree.
+
 ## 0.13.1 (2020-12-04)
 
 ### Bug fixes
