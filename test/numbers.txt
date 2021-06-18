@@ -20,7 +20,7 @@ JsonText(Number)
 
 ==>
 
-JsonText(Array(Number, ⚠, Number))
+JsonText(Array(Number, ⚠(Number)))
 
 # Optional Minus Sign
 
