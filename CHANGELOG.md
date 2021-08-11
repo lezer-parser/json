@@ -1,3 +1,11 @@
+## 0.15.0 (2021-08-11)
+
+### Breaking changes
+
+The module's name changed from `lezer-json` to `@lezer/json`.
+
+Upgrade to the 0.15.0 lezer interfaces.
+
 ## 0.13.2 (2021-06-14)
 
 ### Bug fixes
