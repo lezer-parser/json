@@ -16,9 +16,9 @@ PropertyName { string }
   Null  { "null" }
 
   Number { '-'? int frac? exp?  }
-  int  { '0' | $[1-9] std.digit* }
-  frac { '.' std.digit+ }
-  exp  { $[eE] $[+\-]? std.digit+ }
+  int  { '0' | $[1-9] @digit* }
+  frac { '.' @digit+ }
+  exp  { $[eE] $[+\-]? @digit+ }
 
   string { '"' char* '"' }
   char { $[\u{20}\u{21}\u{23}-\u{5b}\u{5d}-\u{10ffff}] | "\\" esc }
