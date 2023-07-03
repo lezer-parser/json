@@ -5,10 +5,10 @@
   "main": "dist/index.cjs",
   "type": "module",
   "exports": {
-    "import": "./dist/index.es.js",
+    "import": "./dist/index.js",
     "require": "./dist/index.cjs"
   },
-  "module": "dist/index.es.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Arun Srinivasan <rulfzid@gmail.com>",
   "license": "MIT",
