@@ -2,12 +2,12 @@
 
 value { True | False | Null | Number | String | Object | Array }
 
-String { string }
+String[isolate] { string }
 Object { "{" list<Property>? "}" }
 Array  { "[" list<value>? "]" }
 
 Property { PropertyName ":" value }
-PropertyName { string }
+PropertyName[isolate] { string }
 
 
 @tokens {
