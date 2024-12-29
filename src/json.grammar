@@ -27,7 +27,7 @@ PropertyName[isolate] { string }
 
   whitespace { $[ \n\r\t] }
 
-  "{" "}" "[" "]"
+  "{" "}" "[" "]" "," ":"
 }
 
 @skip { whitespace }
