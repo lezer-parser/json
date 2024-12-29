@@ -1,3 +1,9 @@
+## 1.0.3 (2024-12-29)
+
+### Bug fixes
+
+Emit tokens for colons and commas.
+
 ## 1.0.2 (2023-12-28)
 
 ### Bug fixes
